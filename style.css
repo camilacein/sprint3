@@ -202,3 +202,15 @@ tr,td,th{
     justify-content: center;
     min-height: 90vh;
 }
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 120%;
+    
+}
+#order {
+    display: flex;
+    justify-content: center;
+}

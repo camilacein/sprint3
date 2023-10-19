@@ -1,11 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Fjalla+One&family=Lora&display=swap" rel="stylesheet">
+    <title>Mindy Photo</title>
 </head>
+
 <body>
-    
+    <header id="color">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="aboutUs.html">About Us</a>
+                <a href="contact.html">Contact</a>
+                <a href="services.html">Services</a>
+                <a href="rating.html">Rating</a>
+                <a id="active" href="#">Hire</a>
+            </nav>
+            <img src="images/logo.png" alt="logo" id="smallimglogo">
+    </header>
+    <main>
+        <section>
+            <h2>Hire</h2>
+            <h3>Fill out the form so we can attend your event</h3>
+
+        </section>
+           
+        
+        <div id="order">
+            <section>
+                <h3>Our locations</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6610.924953889788!2d-118.35564082229006!3d34.05765699999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bbfbf5182c31%3A0x8c4bc3c08f8c188d!2sMindy%20Weiss%20Party%20Consultants!5e0!3m2!1ses-419!2sar!4v1697746557556!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+            
+
+        
+        
+            <form action="showdata/show_data.html" method="get">
+                <fieldset> 
+                    <label for="name">First Name and Last Name</label>
+                <input type="text" id="name" name="name" placeholder="Here enter your name">
+                <br>
+                <label for="number">Phone Number</label>
+                <input type="tel" id="number" placeholder="Here enter your phone number">
+                <br>
+                <label for="services">Choose Service</label>
+                <select name="services" id="services">
+                    <option value="weddings">Wedding</option>
+                    <option value="birthdays">Birthday</option>
+                    <option value="kidsBirthdays">kids birthday</option>
+                    <option value="PhotoStudio">Photos Studio/ Outside</option>
+                </select>
+                <br>
+                <label for="date">Choose Date </label>
+                <input type="date" name="date" id="date">
+                <label for=""></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Payment Options</legend>
+                    <label for="cash"><input type="radio" id="cash"> Cash</label>
+                    <br>
+                    <label for="credit"><input type="radio" id="credit"> Credit Card</label>
+                    <br>
+                    <label for="debit"><input type="radio" id="debit"> Debit Card</label>
+                    
+                </fieldset>
+                <fieldset>
+                    <label for="message"> Message (location and time) </label>
+                    <br>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    <br>
+                    <label for="condition"> <input type="checkbox" id="condition"> I accept terms and conditions</label>
+                    <input type="button" value="Send"  >
+                    
+                </fieldset>
+                
+                
+
+            </form>
+
+        </div>
+
+    </main>
+    <footer>
+        <p> Created by: Camila Cein</p>
+    </footer>
 </body>
+
 </html>
